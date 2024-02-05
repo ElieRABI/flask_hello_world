@@ -11,7 +11,7 @@
       google.charts.setOnLoadCallback(drawColumnChart);
 
       function drawColumnChart() {
-        fetch('/paris/')
+        fetch('/flask/paris/')
           .then(response => response.json())
           .then(data => {
             var dataTable = new google.visualization.DataTable();
